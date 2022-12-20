@@ -3,7 +3,32 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	if ( x > 'A' &&  x <= 'Z') {
+	return x - 1;
+	}
+
+	if (x >= 97 && x <= 122) {
+
+		return '0';
+	}
+
+	if (x == 'A') {
+
+		x = 'Z';
+
+		return x;
+	}
+	
+	if (x == '0') {
+	
+	return '0';
+	}
+
+
+
+return 0;
 }
+
 
 int main(){
 	//Test Case
